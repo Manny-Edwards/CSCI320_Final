@@ -17,9 +17,7 @@ at a time. Having it be distributed makes for a better experience.
 
 Operation
 In order to use this application, the host(user), must first run the GameStart class which creates the space for the two
-players. Only one GameStart is necessary and you will not be able to proceed without it running. You will be prompted with
-two windows asking for a height and width for the game’s panel. The objects within the game will scale with the size of
-the window.
+players. Only one GameStart is necessary and you will not be able to proceed without it running.
 Each player must then, from their own devices, run the Player_Create class, which creates a player and puts them into the
 space. Once the space has two players, the game will begin. All other players then attempting to join after the game has
 started will be met with a message and their process will terminate.
