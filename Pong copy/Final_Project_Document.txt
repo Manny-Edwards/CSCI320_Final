@@ -1,0 +1,28 @@
+
+Mathematics & Computer Science Department
+Networking & Distributed Computing - Spring 2018
+Programming Assignment 04
+Deadline: May 4th 11:59pm
+
+
+Goals
+Use Javaspaces to write a distributed application that simulates a multiplayer pong game.
+
+Pong game
+This project’s goal is to create a game of pong that two players maximum can play from different devices that support the
+software. I used Javaspaces because as the multiplayer aspect is similar to our older energy_mplay project, I felt that
+javaspaces was the most fitting technique for this. A distributed application makes the most sense since it would not make
+sense for two players to be crammed on one keyboard to play together especially if their keyboard only recognizes one key
+at a time. Having it be distributed makes for a better experience.
+
+Operation
+In order to use this application, the host(user), must first run the GameStart class which creates the space for the two
+players. Only one GameStart is necessary and you will not be able to proceed without it running. You will be prompted with
+two windows asking for a height and width for the game’s panel. The objects within the game will scale with the size of
+the window.
+Each player must then, from their own devices, run the Player_Create class, which creates a player and puts them into the
+space. Once the space has two players, the game will begin. All other players then attempting to join after the game has
+started will be met with a message and their process will terminate.
+As of now, the game goes until a player misses 21 times.
+
+Both players utilize the up and down arrow keys to move their paddle.
